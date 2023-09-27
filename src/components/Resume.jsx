@@ -1,12 +1,12 @@
 import React from 'react';
 import { useGetResumeQuery } from '../api/resumeApi';
-import { mockResumeData } from '../api/mockData'; 
+import { mockResumeData } from '../api/mockData';
 
 const Resume = () => {
   const { data: resume, isLoading, isError } = useGetResumeQuery();
 
-  const useMockData = true; 
-  console.log('Resume Data:', resume); 
+  const useMockData = true;
+  console.log('Resume Data:', resume);
 
   if (isLoading) {
     return <div>Loading...</div>;

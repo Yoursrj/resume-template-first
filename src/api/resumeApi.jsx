@@ -1,4 +1,4 @@
-import { createApi  } from '@reduxjs/toolkit/query/react';
+import { createApi } from '@reduxjs/toolkit/query/react';
 import { mockResumeData } from './mockData';
 
 const getResumeData = async () => {
@@ -11,7 +11,7 @@ export const resumeApi = createApi({
   baseQuery: () => getResumeData(),
   endpoints: (builder) => ({
     getResume: builder.query({
-      query: () => 'resume', 
+      query: () => 'resume',
     }),
   }),
 });
